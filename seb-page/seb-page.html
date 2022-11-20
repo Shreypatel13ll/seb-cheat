@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SEB-hack</title>
+  <link rel="icon" href="seb-page/clover.png">
+  <link rel="stylesheet" href="seb-page/style.css">
+</head>
+
+<body>
+  <div class="container" onclick="Open()">
+      <a class="text">Click Me To Open New Tab</a><script type="text/javascript" src="./data.json"></script>
+      <div class="tip"><div class="svg" id="svg"></div>Use CTRL + TAB For Switching Tabs</div>
+  </div>
+  <script src="seb-page/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+    <script>
+       var animation = bodymovin.loadAnimation({
+          container: document.getElementById('svg'),
+          path: 'seb-page/idea.json',
+          renderer: 'svg', 
+          loop: true,
+          autoplay: true,
+          name: "Demo Animation",
+       });
+    </script>
+</body>
+
+</html>
